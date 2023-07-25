@@ -18,7 +18,10 @@
 
     <!---FORMULARIO-->
     <main>
-        <form action=" #">
+        <div>
+            <p id="error"></p>
+        </div>
+        <form action="juego.html" id="formEntrada">
         <div class="itemform">
             <label for="name">Ingrese su nombre</label>
             <input type="text" name="nick" value="@" id="nicka" readonly>
@@ -31,7 +34,7 @@
         <div class="itemform">
             <label for="nick">tamaño del juego</label>
             <select name="tamano" id="tamano">
-                <option value="">--Por favor elige el tamaño--</option>
+                <option value="0">--Por favor elige el tamaño--</option>
                 <option value="1">4x4</option>
                 <option value="2">5x5</option>
                 <option value="3">6x6</option>
@@ -39,7 +42,7 @@
         </div>
 
         <div class="itemform">
-            <input type="submit" value="Jugar">
+            <input type="submit" value="Jugar" id="jugar">
         </div>
         </form>
         </main>
@@ -50,7 +53,7 @@
         </footer>
 
         <!--el codigo javascript-->
-        <script src="js/index.js"></script>
+        <script src="js/app.js"></script>
 </body>
 
 
